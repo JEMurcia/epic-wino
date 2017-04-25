@@ -31,8 +31,8 @@ public class ReporteProgramacionBean implements Serializable {
     
     private final ServiciosProgmsPost servProg;
     
-    private int anio;
-    private int semestre;
+    private int anio = 2017;
+    private int semestre = 1;
     
     public ReporteProgramacionBean() {
         LOGGER.log(Level.FINEST, "Se instancia {0}", this.getClass().getName());
@@ -46,6 +46,7 @@ public class ReporteProgramacionBean implements Serializable {
     }
     
     public List<Materia> getMaterias() { // TODO loggers
+        LOGGER.log(Level.FINEST, "Se obtiene la lista de materias");
         List<Materia> m = new ArrayList<>();
         
         for(Programa p : this.getProgramas()) {
@@ -58,6 +59,8 @@ public class ReporteProgramacionBean implements Serializable {
     }
     
     public Asignatura getAsignatura(Materia m) { // TODO loggers
+        LOGGER.log(Level.FINEST, "Se obtiene la asignatura de la materia ({0}): {1}", 
+                new Object[]{m, m.getAsignatura()});
         return m.getAsignatura();
     }
     

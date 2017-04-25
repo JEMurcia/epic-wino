@@ -17,6 +17,9 @@ public class Programa {
     private int codigoSNIES;
     private List<Asignatura> asignaturas;
 
+    public Programa() {
+        
+    }
     
     public Programa(int id, String nombre) {
         this.id = id;

@@ -15,6 +15,10 @@ public class Profesor {
     private Materia materia;
     private List<Comite> comites;
 
+    public Profesor() {
+        
+    }
+    
     public Profesor(int id, String nombre) {
         this.id = id;
         this.nombre  = nombre;

@@ -19,6 +19,10 @@ public class Materia {
     private List<Materia> corequisitos;
     private List<Clase> clases;
 
+    public Materia() {
+        
+    }
+    
     public Materia(int id, String nombre) {
         this.id = id;
         this.nombre = nombre;

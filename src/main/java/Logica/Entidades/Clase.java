@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.sql.Date;
 import java.sql.Time;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -14,9 +15,13 @@ public class Clase implements Serializable{
     private Date fecha;
     private Time hora_inicio;
     private Time hora_fin;
-    private ArrayList<RecursoConcedido> recursos;
+    private List<RecursoConcedido> recursos;
     private Materia materia;
 
+    public Clase() {
+        
+    }
+    
     public Clase(int id, Date fecha, Time hora_inicio, Time hora_fin) {
         this.id = id;
         this.fecha = fecha;
@@ -65,12 +70,16 @@ public class Clase implements Serializable{
         this.hora_fin = hora_fin;
     }
 
-    public ArrayList<RecursoConcedido> getRecursos() {
+    public List<RecursoConcedido> getRecursos() {
         return recursos;
     }
 
-    public void setRecursos(ArrayList<RecursoConcedido> recursos) {
+    /*public void setRecursos(List<RecursoConcedido> recursos) {
         this.recursos = recursos;
+    }*/
+    
+    public void setRecursos(RecursoConcedido recurso) {
+        System.out.println("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
     }
     
     @Override

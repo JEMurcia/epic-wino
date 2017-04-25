@@ -11,6 +11,7 @@ import Logica.Dao.PersistenceException;
 import Logica.Entidades.Clase;
 import Logica.Entidades.RecursoConcedido;
 import com.google.inject.Inject;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -29,7 +30,7 @@ public class MyBatisClaseDAO implements ClaseDAO {
 
     @Override
     public Clase load(int id) throws PersistenceException {
-        return null; // TODO implementar
+        return new Clase(); // TODO implementar
     }
 
     @Override
@@ -39,7 +40,7 @@ public class MyBatisClaseDAO implements ClaseDAO {
 
     @Override
     public List<RecursoConcedido> loadRecursosConcedidos(int idCl) throws PersistenceException {
-        return null; // TODO implementar
+        return new ArrayList<>(); // TODO implementar
     }
 
     @Override

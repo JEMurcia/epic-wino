@@ -13,6 +13,10 @@ public class Asignatura {
     private Programa programa;
     private List<Materia> materias;
 
+    public Asignatura() {
+        
+    }
+    
     public Asignatura(int id, String nombre) {
         this.id = id;
         this.nombre = nombre;

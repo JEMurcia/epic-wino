@@ -35,7 +35,7 @@
         <collection property="recursos" columnPrefix="recc_" ofType="RecursoConcedido" resultMap="RecursoConcedidoResult"/>
     </resultMap>
     <resultMap type="RecursoConcedido" id="RecursoConcedidoResult">
-        <association  property="clase" columnPrefix="clase_" javaType="Clase" resultMap="ClaseResult"/>
+        <association  property="clase" columnPrefix="clas_" javaType="Clase" resultMap="ClaseResult"/>
         <association  property="recurso" columnPrefix="rec_" javaType="Recurso" resultMap="RecursoResult"/>
     </resultMap>
     <resultMap type="Recurso" id="RecursoResult">

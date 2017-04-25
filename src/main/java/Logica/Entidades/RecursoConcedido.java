@@ -10,6 +10,10 @@ public class RecursoConcedido implements Serializable{
     private Clase clase;
     private Recurso recurso;
 
+    public RecursoConcedido() {
+        
+    }
+    
     public RecursoConcedido(Clase clase, Recurso recurso) {
         this.clase = clase;
         this.recurso = recurso;
